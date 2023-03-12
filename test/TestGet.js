@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const page = require('../page/TestGetPage.js');
 
 describe('Positif Case Get', () => {
-    it('Test Get', async() => {
+    it('should return a list of users', async() => {
         const response = await page.testGet()
     
     var Get = response.body;

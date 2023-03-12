@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const page = require('../page/TestPutPage.js');
 
 describe('Positif Case Put', () => {
-    it('Test Update User', async() => {
+    it('should update an existing user', async() => {
         const response = await page.putRegister()
         .send({
             name: "morpheus",

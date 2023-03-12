@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const page = require('../page/TestDeletePage.js');
 
 describe('Positif Case Delete', () => {
-    it('Test Register', async() => {
+    it('Should delete an existing user', async() => {
         const response = await page.testDelete()
         .send({
             name: "morpheus",

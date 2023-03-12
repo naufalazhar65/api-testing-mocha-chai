@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const page = require('../page/TestLoginPage.js');
 
 describe('Positif Case Register', () => {
-    it('Test Login', async() => {
+    it('should create a new user', async() => {
         const response = await page.testLogin()
         .send({
             email: "eve.holt@reqres.in",
@@ -16,3 +16,4 @@ describe('Positif Case Register', () => {
         console.log(Register);
     });
 });
+
