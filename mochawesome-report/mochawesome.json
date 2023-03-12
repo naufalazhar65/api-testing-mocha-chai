@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-11T12:47:32.609Z",
-    "end": "2023-03-11T12:47:34.235Z",
-    "duration": 1626,
+    "start": "2023-03-12T10:40:43.907Z",
+    "end": "2023-03-12T10:40:46.545Z",
+    "duration": 2638,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "49cd9d45-e566-4686-8618-0583e46a8bb9",
+      "uuid": "593b3809-f4a8-4fe0-8c35-c2701225f357",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0ba1f58a-086a-4442-86ed-1f1ccb850ab9",
+          "uuid": "3394d269-e8de-43c5-86aa-8b005a1a754f",
           "title": "Positif Case Delete",
           "fullFile": "/Users/naufalazhar/Documents/NAUFAL_AZHAR/mocha_reqres/test/TestDelete.js",
           "file": "/test/TestDelete.js",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test Register",
-              "fullTitle": "Positif Case Delete Test Register",
+              "title": "Should delete an existing user",
+              "fullTitle": "Positif Case Delete Should delete an existing user",
               "timedOut": false,
-              "duration": 506,
+              "duration": 1677,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,26 +47,26 @@
               "context": null,
               "code": "const response = await page.testDelete()\n.send({\n    name: \"morpheus\",\n    job: \"leader\"\n    })\n    var Delete = response.body;\nexpect(response.status).to.equal(204);\nconsole.log(Delete);",
               "err": {},
-              "uuid": "17c5e1ec-ad1e-4a30-928c-e1c03b59a2df",
-              "parentUUID": "0ba1f58a-086a-4442-86ed-1f1ccb850ab9",
+              "uuid": "2ae24950-7d55-4250-8b17-a9f26dee374c",
+              "parentUUID": "3394d269-e8de-43c5-86aa-8b005a1a754f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "17c5e1ec-ad1e-4a30-928c-e1c03b59a2df"
+            "2ae24950-7d55-4250-8b17-a9f26dee374c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 506,
+          "duration": 1677,
           "root": false,
           "rootEmpty": false,
           "_timeout": 20000
         },
         {
-          "uuid": "e0ffcb79-33cf-421b-a107-d055d2063387",
+          "uuid": "8c7286bf-8fbd-4220-8cb0-ea7f4d84d9ce",
           "title": "Positif Case Get",
           "fullFile": "/Users/naufalazhar/Documents/NAUFAL_AZHAR/mocha_reqres/test/TestGet.js",
           "file": "/test/TestGet.js",
@@ -74,49 +74,49 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test Get",
-              "fullTitle": "Positif Case Get Test Get",
+              "title": "should return a list of users",
+              "fullTitle": "Positif Case Get should return a list of users",
               "timedOut": false,
-              "duration": 75,
+              "duration": 80,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const response = await page.testGet()\n    \n    var Get = response.body;\nexpect(response.status).to.equal(200);\nexpect(response.body).to.be.an('object');\nexpect(response.body.data).to.have.property('id', 2);\nexpect(response.body.data).to.have.property('email', 'janet.weaver@reqres.in');\n// expect(response.body.data).to.have.property('name', 'morpheus');\n// expect(response.body.data).to.have.property('job', 'leader');\nconsole.log(Get);",
               "err": {},
-              "uuid": "40be565c-6008-44ff-a1bd-1ad76425adec",
-              "parentUUID": "e0ffcb79-33cf-421b-a107-d055d2063387",
+              "uuid": "879a624d-f55d-4633-8c06-161bbd60968a",
+              "parentUUID": "8c7286bf-8fbd-4220-8cb0-ea7f4d84d9ce",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "40be565c-6008-44ff-a1bd-1ad76425adec"
+            "879a624d-f55d-4633-8c06-161bbd60968a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 75,
+          "duration": 80,
           "root": false,
           "rootEmpty": false,
           "_timeout": 20000
         },
         {
-          "uuid": "635d987d-e48f-4fc1-8ae6-d89d5b2636a8",
+          "uuid": "b0507f72-98db-472a-bfce-59f3541b35b0",
           "title": "Positif Case Register",
-          "fullFile": "/Users/naufalazhar/Documents/NAUFAL_AZHAR/mocha_reqres/test/TestLogin.js",
-          "file": "/test/TestLogin.js",
+          "fullFile": "/Users/naufalazhar/Documents/NAUFAL_AZHAR/mocha_reqres/test/TestPost.js",
+          "file": "/test/TestPost.js",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test Login",
-              "fullTitle": "Positif Case Register Test Login",
+              "title": "should create a new user",
+              "fullTitle": "Positif Case Register should create a new user",
               "timedOut": false,
-              "duration": 527,
+              "duration": 437,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -125,26 +125,26 @@
               "context": null,
               "code": "const response = await page.testLogin()\n.send({\n    email: \"eve.holt@reqres.in\",\n    password: \"pistol\"\n    })\n    var Register = response.body;\nexpect(response.status).to.equal(200);\nexpect(response.body).to.have.property('id', 4);\nexpect(response.body).to.have.property('token');\nconsole.log(Register);",
               "err": {},
-              "uuid": "fd65b43b-fcfd-4fc5-98a5-0b6aee0b81b3",
-              "parentUUID": "635d987d-e48f-4fc1-8ae6-d89d5b2636a8",
+              "uuid": "6b5cc4d4-876a-4286-be1d-6752c19202ae",
+              "parentUUID": "b0507f72-98db-472a-bfce-59f3541b35b0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fd65b43b-fcfd-4fc5-98a5-0b6aee0b81b3"
+            "6b5cc4d4-876a-4286-be1d-6752c19202ae"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 527,
+          "duration": 437,
           "root": false,
           "rootEmpty": false,
           "_timeout": 20000
         },
         {
-          "uuid": "c3fea135-0a0d-4985-b2c6-faec6c6689a4",
+          "uuid": "a4a70f2d-5129-439c-a217-4146875af782",
           "title": "Positif Case Put",
           "fullFile": "/Users/naufalazhar/Documents/NAUFAL_AZHAR/mocha_reqres/test/TestPut.js",
           "file": "/test/TestPut.js",
@@ -152,10 +152,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test Update User",
-              "fullTitle": "Positif Case Put Test Update User",
+              "title": "should update an existing user",
+              "fullTitle": "Positif Case Put should update an existing user",
               "timedOut": false,
-              "duration": 511,
+              "duration": 436,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -164,20 +164,20 @@
               "context": null,
               "code": "const response = await page.putRegister()\n.send({\n    name: \"morpheus\",\n    job: \"zion resident\"\n    })\nassert(response.status).to.equal(200);\nexpect(response.body).to.have.property('name', 'morpheus');\nexpect(response.body).to.have.property('job', 'zion resident');\nvar Put = response.body;\nconsole.log(Put);",
               "err": {},
-              "uuid": "725276e4-5b40-440d-bab9-6574becd4be5",
-              "parentUUID": "c3fea135-0a0d-4985-b2c6-faec6c6689a4",
+              "uuid": "4c066571-eefb-4f69-ae0d-98291412785c",
+              "parentUUID": "a4a70f2d-5129-439c-a217-4146875af782",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "725276e4-5b40-440d-bab9-6574becd4be5"
+            "4c066571-eefb-4f69-ae0d-98291412785c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 511,
+          "duration": 436,
           "root": false,
           "rootEmpty": false,
           "_timeout": 20000
